@@ -1,6 +1,6 @@
 
 /**
- * @license RequieJS step Copyright (c) 2012, The Dojo Foundation All Rights Reserved.
+ * @license RequireJS step 0.0.1 Copyright (c) 2012, The Dojo Foundation All Rights Reserved.
  * Available via the MIT or new BSD license.
  * see: http://github.com/requirejs/step for details
  */
@@ -59,6 +59,8 @@ define('step',['module'], function (module) {
 
     //Export the loader plugin API
     return {
+        version: '0.0.1',
+
         load: function (id, require, onLoad, config) {
             //Only allows one mapped config.
             if (!stepById) {
