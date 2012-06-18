@@ -45,6 +45,9 @@ Then, to load a dependency along with anything in previous steps, use the
 
 ```javascript
 define(['step!four'], function () {
+    //one.js, two.js and three.js will have also been
+    //loaded by the time this function is called.
+
     //four.js creates a global `four` variable,
     //and it does not call define() so there
     //will not be a local `four` reference
