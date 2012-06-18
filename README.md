@@ -81,7 +81,8 @@ important that they do not depend on each other.
 
 ## Limitations
 
-* It is best to use `step` only with scripts that do not already call define().
+* Only use `step` with scripts that do not already call define(). Similarly,
+do not include scripts in `step` that depend on AMD modules.
 * It is slower loading than loading plain AMD modules. `step` waits for each
 previous step to complete loading before doing the next step. Doing an
 [r.js optimization build](http://requirejs.org/docs/optimization.html)
