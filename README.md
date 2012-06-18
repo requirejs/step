@@ -16,7 +16,9 @@ If you have a bunch of scripts with dependency sets that would make
 
 ## Usage
 
-`step` only works with AMD loaders that support [module config]().
+`step` only works with AMD loaders that support
+[module config](http://requirejs.org/docs/api.html#config-moduleconfig), like
+RequireJS 2.0.
 
 First, set up a module config for `step` and list out the steps in a `steps`
 property:
