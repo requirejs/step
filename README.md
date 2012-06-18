@@ -33,7 +33,7 @@ require.config({
             ]
         }
     }
-})
+});
 ```
 
 In this example, four depends on three, two and one being loaded in order.
@@ -41,7 +41,7 @@ In this example, four depends on three, two and one being loaded in order.
 Then, to load a dependency along with anything in previous steps, use the
 `step!` loader prefix ID:
 
-````
+```javascript
 define(['step!four'], function () {
     //four.js creates a global `four` variable,
     //and it does not call define() so there
@@ -50,7 +50,7 @@ define(['step!four'], function () {
     //`four` instead.
     console.log(four.doSomething());
 });
-````
+```
 
 If you know that a script depends on two different scripts that each do not
 depend on each other, then you can put them in the same step. For instance,
@@ -68,7 +68,7 @@ require.config({
             ]
         }
     }
-})
+});
 ```
 
 All the scripts in a step are loaded async and can load out of order, so it is
