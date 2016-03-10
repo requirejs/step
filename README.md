@@ -93,3 +93,11 @@ built file is run in the browser.
 * `step` will read the step config the first time it is called, and "burn in"
 that config internally. So, it will not understand any further step config if
 it is set after the first `step!` reference.
+
+## License
+
+MIT
+
+## Code of Conduct
+
+[jQuery Foundation Code of Conduct](https://jquery.org/conduct/).
